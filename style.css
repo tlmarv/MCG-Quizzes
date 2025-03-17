@@ -1,42 +1,97 @@
+/* General Page Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background: #0077b6;
+    background-color: #121212;
     color: white;
-    padding: 20px;
 }
 
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #0077b6, #00aaff);
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+/* Navigation Styling */
 nav {
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .tab-link {
-    background: #0077b6;
+    background: #1f1f1f;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 18px;
     margin: 5px;
+    border-radius: 8px;
+    font-size: 1rem;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
-.tab-link.active {
-    background: #005f8d;
+.tab-link.active, .tab-link:hover {
+    background: #0077b6;
 }
 
+/* Tab Content Styling */
 .tab-content {
     display: none;
     padding: 20px;
-    background: white;
-    margin: 20px;
-    border-radius: 5px;
+    background: #222;
+    margin: 20px auto;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 .tab-content.active {
     display: block;
+}
+
+/* Quiz Card Styling */
+.quiz-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.quiz-card {
+    background: #0077b6;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.quiz-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.quiz-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.quiz-card p {
+    font-size: 0.9rem;
+    margin-top: 5px;
 }
