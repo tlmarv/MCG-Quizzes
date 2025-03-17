@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Quiz Hub</h1>
+        <p>Organized quizzes on various medical topics</p>
+    </header>
+
+    <nav>
+        <button class="tab-link active" onclick="openTab(event, 'heme')">Hematology</button>
+        <button class="tab-link" onclick="openTab(event, 'respiratory')">Respiratory</button>
+        <button class="tab-link" onclick="openTab(event, 'cardio')">Cardiology</button>
+    </nav>
+
+    <div id="heme" class="tab-content active">
+        <h2>Hematology Quizzes</h2>
+        <ul>
+            <li><a href="https://tlmarv.github.io/CPHeme-Week25-Quiz/" target="_blank">Heme Quiz - Week 25</a></li>
+            <li><a href="https://tlmarv.github.io/CPHeme-Week26-Quiz/" target="_blank">Heme Quiz - Week 26</a></li>
+        </ul>
+    </div>
+
+    <div id="respiratory" class="tab-content">
+        <h2>Respiratory Quizzes</h2>
+        <ul>
+            <li><a href="#">Coming Soon</a></li>
+        </ul>
+    </div>
+
+    <div id="cardio" class="tab-content">
+        <h2>Cardiology Quizzes</h2>
+        <ul>
+            <li><a href="#">Coming Soon</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
