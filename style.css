@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #0077b6;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    margin: 20px;
+}
+
+.tab-link {
+    background: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.tab-link.active {
+    background: #005f8d;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.tab-content.active {
+    display: block;
+}
