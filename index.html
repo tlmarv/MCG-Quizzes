@@ -9,42 +9,98 @@
 <body>
 
     <header>
-        <h1>Quiz Hub</h1>
-        <p>Your go-to platform for interactive quizzes</p>
+        <h1>MCG Lecture Content Quizzes</h1>
+        <p>These questions were made based on the information presented in lecture slides with the assistance of AI. Due to the rapid creation and dissemination of these quizzes, errors will appear. Please let us know if you notice anything so we can remedy it for future classes/module exam studying. </p>
     </header>
 
     <nav>
-        <button class="tab-link active" onclick="openTab(event, 'CPHeme')"> CPHeme</button>
-        <button class="tab-link" onclick="openTab(event, 'MSK')">🫁 Respiratory</button>
-        <button class="tab-link" onclick="openTab(event, 'GIGU')">❤️ Cardiology</button>
+        <button class="tab-link active" onclick="openTab(event, 'msk')">💪 MSK</button>
+        <button class="tab-link" onclick="openTab(event, 'cpheme')">🩸 CPHeme</button>
+        <button class="tab-link" onclick="openTab(event, 'gigu')">🍽️ GIGU</button>
     </nav>
 
-    <div id="CPHeme" class="tab-content active">
-        <h2>Hematology Quizzes</h2>
+    <!-- MSK TAB -->
+    <div id="msk" class="tab-content active">
+        <h2>MSK Quizzes</h2>
+        <div class="quiz-container">
+            <a href="https://tlmarv.github.io/MSK-Week12-Quiz/" class="quiz-card" target="_blank">
+                <h3>MSK Quiz - Week 12</h3>
+                <p>Musculoskeletal review for Week 12.</p>
+            </a>
+            <a href="https://tlmarv.github.io/MSK-Week13-Quiz/" class="quiz-card" target="_blank">
+                <h3>MSK Quiz - Week 13</h3>
+                <p>Musculoskeletal review for Week 13.</p>
+            </a>
+            <a href="https://tlmarv.github.io/MSK-Week14-Quiz/" class="quiz-card" target="_blank">
+                <h3>MSK Quiz - Week 14</h3>
+                <p>Musculoskeletal review for Week 14.</p>
+            </a>
+            <a href="https://tlmarv.github.io/MSK-Week15-Quiz/" class="quiz-card" target="_blank">
+                <h3>MSK Quiz - Week 15</h3>
+                <p>Musculoskeletal review for Week 15.</p>
+            </a>
+            <a href="https://tlmarv.github.io/MSK-Week16-Quiz/" class="quiz-card" target="_blank">
+                <h3>MSK Quiz - Week 16</h3>
+                <p>Musculoskeletal review for Week 16.</p>
+            </a>
+            <a href="https://tlmarv.github.io/MSK-Week17-Quiz/" class="quiz-card" target="_blank">
+                <h3>MSK Quiz - Week 17</h3>
+                <p>Musculoskeletal review for Week 17.</p>
+            </a>
+            <a href="https://tlmarv.github.io/MSK-Week18-Quiz/" class="quiz-card" target="_blank">
+                <h3>MSK Quiz - Week 18</h3>
+                <p>Musculoskeletal review for Week 18.</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- CPHeme TAB -->
+    <div id="cpheme" class="tab-content">
+        <h2>CPHeme Quizzes</h2>
         <div class="quiz-container">
             <a href="https://tlmarv.github.io/CPHeme-Week25-Quiz/" class="quiz-card" target="_blank">
-                <h3>Heme Quiz - Week 25</h3>
-                <p>Test your hematology knowledge.</p>
+                <h3>CPHeme Quiz - Week 25</h3>
+                <p>Hematology review for Week 25.</p>
             </a>
             <a href="https://tlmarv.github.io/CPHeme-Week26-Quiz/" class="quiz-card" target="_blank">
-                <h3>Heme Quiz - Week 26</h3>
-                <p>Advanced hematology questions.</p>
+                <h3>CPHeme Quiz - Week 26</h3>
+                <p>Hematology review for Week 26.</p>
+            </a>
+            <a href="https://tlmarv.github.io/CPHeme-Week27-Quiz/" class="quiz-card" target="_blank">
+                <h3>CPHeme Quiz - Week 27</h3>
+                <p>Cardiology review for Week 27.</p>
+            </a>
+            <a href="https://tlmarv.github.io/CPHeme-Week28-Quiz/" class="quiz-card" target="_blank">
+                <h3>CPHeme Quiz - Week 28</h3>
+                <p>Cardiology review for Week 28.</p>
+            </a>
+            <a href="https://tlmarv.github.io/CPHeme-Week29-Quiz/" class="quiz-card" target="_blank">
+                <h3>CPHeme Quiz - Week 29</h3>
+                <p>Cardiology review for Week 29.</p>
+            </a>
+            <a href="https://tlmarv.github.io/CPHeme-Week30-Quiz/" class="quiz-card" target="_blank">
+                <h3>CPHeme Quiz - Week 30</h3>
+                <p>Cardiology review for Week 30.</p>
+            </a>
+            <a href="https://tlmarv.github.io/CPHeme-Week31-Quiz/" class="quiz-card" target="_blank">
+                <h3>CPHeme Quiz - Week 31</h3>
+                <p>Pulmonolgy review for Week 31.</p>
+            </a>
+            <a href="https://tlmarv.github.io/CPHeme-Week32-Quiz/" class="quiz-card" target="_blank">
+                <h3>CPHeme Quiz - Week 32</h3>
+                <p>Pulmonolgy review for Week 32.</p>
+            </a>
+            <a href="https://tlmarv.github.io/CPHeme-Week33-Quiz/" class="quiz-card" target="_blank">
+                <h3>CPHeme Quiz - Week 33</h3>
+                <p>Pulmonology review for Week 33.</p>
             </a>
         </div>
     </div>
 
-    <div id="MSK" class="tab-content">
-        <h2>Respiratory Quizzes</h2>
-        <div class="quiz-container">
-            <a href="#" class="quiz-card">Coming Soon</a>
-        </div>
-    </div>
-
-    <div id="GIGU" class="tab-content">
-        <h2>Cardiology Quizzes</h2>
-        <div class="quiz-container">
-            <a href="#" class="quiz-card">Coming Soon</a>
-        </div>
+    <!-- GIGU TAB (Empty for now) -->
+    <div id="gigu" class="tab-content">
+        <h2>GIGU Quizzes</h2>
+        <p>Coming soon...</p>
     </div>
 
     <script src="script.js"></script>
