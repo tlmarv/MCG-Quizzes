@@ -10,35 +10,41 @@
 
     <header>
         <h1>Quiz Hub</h1>
-        <p>Organized quizzes on various medical topics</p>
+        <p>Your go-to platform for interactive quizzes</p>
     </header>
 
     <nav>
-        <button class="tab-link active" onclick="openTab(event, 'heme')">Hematology</button>
-        <button class="tab-link" onclick="openTab(event, 'respiratory')">Respiratory</button>
-        <button class="tab-link" onclick="openTab(event, 'cardio')">Cardiology</button>
+        <button class="tab-link active" onclick="openTab(event, 'CPHeme')"> CPHeme</button>
+        <button class="tab-link" onclick="openTab(event, 'MSK')">🫁 Respiratory</button>
+        <button class="tab-link" onclick="openTab(event, 'GIGU')">❤️ Cardiology</button>
     </nav>
 
-    <div id="heme" class="tab-content active">
+    <div id="CPHeme" class="tab-content active">
         <h2>Hematology Quizzes</h2>
-        <ul>
-            <li><a href="https://tlmarv.github.io/CPHeme-Week25-Quiz/" target="_blank">Heme Quiz - Week 25</a></li>
-            <li><a href="https://tlmarv.github.io/CPHeme-Week26-Quiz/" target="_blank">Heme Quiz - Week 26</a></li>
-        </ul>
+        <div class="quiz-container">
+            <a href="https://tlmarv.github.io/CPHeme-Week25-Quiz/" class="quiz-card" target="_blank">
+                <h3>Heme Quiz - Week 25</h3>
+                <p>Test your hematology knowledge.</p>
+            </a>
+            <a href="https://tlmarv.github.io/CPHeme-Week26-Quiz/" class="quiz-card" target="_blank">
+                <h3>Heme Quiz - Week 26</h3>
+                <p>Advanced hematology questions.</p>
+            </a>
+        </div>
     </div>
 
-    <div id="respiratory" class="tab-content">
+    <div id="MSK" class="tab-content">
         <h2>Respiratory Quizzes</h2>
-        <ul>
-            <li><a href="#">Coming Soon</a></li>
-        </ul>
+        <div class="quiz-container">
+            <a href="#" class="quiz-card">Coming Soon</a>
+        </div>
     </div>
 
-    <div id="cardio" class="tab-content">
+    <div id="GIGU" class="tab-content">
         <h2>Cardiology Quizzes</h2>
-        <ul>
-            <li><a href="#">Coming Soon</a></li>
-        </ul>
+        <div class="quiz-container">
+            <a href="#" class="quiz-card">Coming Soon</a>
+        </div>
     </div>
 
     <script src="script.js"></script>
