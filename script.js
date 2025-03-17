@@ -1,6 +1,6 @@
 function openTab(evt, tabName) {
     let i, tabContent, tabLinks;
-    
+
     // Hide all tab content
     tabContent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabContent.length; i++) {
@@ -13,12 +13,12 @@ function openTab(evt, tabName) {
         tabLinks[i].classList.remove("active");
     }
 
-    // Show current tab and set it as active
+    // Show the current tab and set it as active
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.classList.add("active");
 }
 
-// Default open first tab
+// Set the default active tab on page load
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementsByClassName("tab-link")[0].click();
 });
